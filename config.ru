@@ -1,6 +1,8 @@
 ENV["SINATRA_ENV"] = "test"
 require './config/environment'
 
+use Rack::MethodOverride
+
 begin
   fi_check_migration
 

@@ -1,0 +1,18 @@
+<h1>This is the index.</h1>
+
+
+<form method="get" action="/articles/new">
+  Go to the '/articles/new' page: <input type="submit" value="LEZGO!!">
+</form>
+<br><br>
+
+
+<h2>All Articles in Article.all:</h2>
+
+<% if @articles != nil %>
+  <% @articles.each do |article| %>
+    <h3>Title: <%= article[:title] %></h3>
+    Text: <%= article[:content] %>
+    <br><br>
+  <% end %>
+<% end %>

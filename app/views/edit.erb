@@ -1,0 +1,10 @@
+<h1>This is the edit.erb view.</h1>
+
+<h2>Change your article below:</h2>
+
+<form method="POST" action="/articles/<%= @article.id %>">
+  <input id="hidden" type="hidden" name="_method" value="PATCH">
+  <input id="title" type="text" value="<%= @article.title %>" name="article[title]">
+  <input id="content" type="text" value="<%= @article.content %>" name="article[content]">
+  <input type="submit">
+</form>
