@@ -1,0 +1,11 @@
+
+
+<h2>Article id = <%= @article.id %> </h2>
+
+    <h3>Title: <%= @article[:title] %></h3>
+    Text: <%= @article[:content] %>
+
+    <form method="POST" action="/articles/<%= @article.id %>">
+      <input id="hidden" type="hidden" name="_method" value="DELETE">
+      <input type="submit" value="BALEETED">
+    </form>
