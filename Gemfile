@@ -5,7 +5,7 @@ gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
 
 gem 'sinatra'
 gem 'pry-nav'
-gem 'rake'
+gem 'rake', '~> 12.3.0'
 gem 'rspec'
 gem 'rack-test'
 gem 'database_cleaner', git: 'https://github.com/bmabey/database_cleaner.git'
